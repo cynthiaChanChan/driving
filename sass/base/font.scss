@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "SourceHanSerifSC";
+    font-style: normal;
+    font-weight: 400;
+    src: local("SourceHanSerifSC Regular"),
+        url("../../public/fonts/SourceHanSerifSC-Regular.woff") format("woff");
+    font-display: "swap";
+}
+
+@font-face {
+    font-family: "SourceHanSerifSC";
+    font-style: normal;
+    font-weight: 500;
+    src: local("SourceHanSerifSC Medium"),
+        url("../../public/fonts/SourceHanSerifSC-Medium.woff") format("woff");
+    font-display: "swap";
+}
+
+@font-face {
+    font-family: "SourceHanSerifSC";
+    font-style: normal;
+    font-weight: 700;
+    src: local("SourceHanSerifSC Bold"),
+        url("../../public/fonts/SourceHanSerifSC-Bold.woff") format("woff");
+    font-display: "swap";
+}
+
+@font-face {
+    font-family: "SourceHanSerifSC";
+    font-style: normal;
+    font-weight: 900;
+    src: local("SourceHanSerifSC Heavy"),
+        url("../../public/fonts/SourceHanSerifSC-Heavy.woff") format("woff");
+    font-display: "swap";
+}
