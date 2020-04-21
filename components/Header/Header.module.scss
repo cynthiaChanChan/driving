@@ -1,0 +1,56 @@
+@import "../../sass/abstracts/abstracts.scss";
+
+.header {
+    height: rem(155);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+.logo {
+    display: block;
+    height: 100%;
+    margin-left: rem(90);
+    img {
+        display: block;
+        height: 100%;
+    }
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    font-size: rem(21);
+    color: $color-white;
+    font-weight: 700;
+
+    li {
+        margin-left: rem(58);
+        padding: rem(23) 0;
+        letter-spacing: 2px;
+        &.active {
+            color: $color-primary;
+        }
+    }
+
+    li:first-child {
+        letter-spacing: 16px;
+    }
+
+    li:last-child {
+        margin-left: rem(20);
+        background-image: url("/stock_tag.svg");
+        background-size: cover;
+        text-align: center;
+        padding: rem(23) rem(34) rem(23) rem(40);
+        letter-spacing: unset;
+    }
+}

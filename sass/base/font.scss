@@ -1,35 +1,44 @@
 @font-face {
-    font-family: "SourceHanSerifSC";
+    font-family: "SourceHanSansCN";
+    font-style: normal;
+    font-weight: 300;
+    src: local("SourceHanSansCN Normal"),
+        url("/fonts/SourceHanSansCN-Normal.otf") format("opentype");
+    font-display: "swap";
+}
+
+@font-face {
+    font-family: "SourceHanSansCN";
     font-style: normal;
     font-weight: 400;
-    src: local("SourceHanSerifSC Regular"),
-        url("../../public/fonts/SourceHanSerifSC-Regular.woff") format("woff");
+    src: local("SourceHanSansCN Regular"),
+        url("/fonts/SourceHanSansCN-Regular.otf") format("opentype");
     font-display: "swap";
 }
 
 @font-face {
-    font-family: "SourceHanSerifSC";
+    font-family: "SourceHanSansCN";
     font-style: normal;
     font-weight: 500;
-    src: local("SourceHanSerifSC Medium"),
-        url("../../public/fonts/SourceHanSerifSC-Medium.woff") format("woff");
+    src: local("SourceHanSansCN Medium"),
+        url("/fonts/SourceHanSansCN-Medium.otf") format("opentype");
     font-display: "swap";
 }
 
 @font-face {
-    font-family: "SourceHanSerifSC";
+    font-family: "SourceHanSansCN";
     font-style: normal;
     font-weight: 700;
-    src: local("SourceHanSerifSC Bold"),
-        url("../../public/fonts/SourceHanSerifSC-Bold.woff") format("woff");
+    src: local("SourceHanSansCN Bold"),
+        url("/fonts/SourceHanSansCN-Bold.otf") format("opentype");
     font-display: "swap";
 }
 
 @font-face {
-    font-family: "SourceHanSerifSC";
+    font-family: "SourceHanSansCN";
     font-style: normal;
     font-weight: 900;
-    src: local("SourceHanSerifSC Heavy"),
-        url("../../public/fonts/SourceHanSerifSC-Heavy.woff") format("woff");
+    src: local("SourceHanSansCN Heavy"),
+        url("/fonts/SourceHanSansCN-Heavy.otf") format("opentype");
     font-display: "swap";
 }

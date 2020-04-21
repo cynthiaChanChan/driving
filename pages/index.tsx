@@ -1,11 +1,10 @@
 import Layout from "../components/Layout/Layout";
+import Banner from "../components/Banner/Banner";
 
 export default function Home() {
     return (
-        <div>
-            <Layout>
-                <div>home</div>
-            </Layout>
-        </div>
+        <Layout>
+            <Banner />
+        </Layout>
     );
 }
