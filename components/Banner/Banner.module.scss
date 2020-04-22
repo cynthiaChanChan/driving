@@ -2,7 +2,44 @@
 
 .banner {
     height: rem(880);
-    background-image: url("/banner.png");
+    background-image: url("/banner.jpg");
     background-size: cover;
     background-position: top;
+    position: relative;
+}
+
+.titleBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: rem(164);
+    padding: 0 20px;
+    text-align: center;
+    color: $color-white;
+}
+
+.heading {
+    font-size: rem(78);
+    font-weight: 900;
+    letter-spacing: 16px;
+    text-shadow: 0 0 32px $color-shadow;
+    span {
+        margin-right: rem(60);
+    }
+}
+
+.line {
+    height: 7px;
+    width: rem(290);
+    background-color: $color-primary;
+    margin: 18px auto;
+}
+
+.tag {
+    font-size: rem(24);
+    max-width: rem(780);
+    line-height: 2;
+    letter-spacing: 2.4px;
+    text-shadow: 0 0 32px $color-shadow;
+    margin: 0 auto;
 }

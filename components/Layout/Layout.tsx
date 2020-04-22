@@ -8,7 +8,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => (
     <>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
     </>
 );

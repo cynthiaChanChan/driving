@@ -6,12 +6,14 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0;
+        height: 100%;
     }
 }
 
@@ -22,6 +24,7 @@
     img {
         display: block;
         height: 100%;
+        width: auto;
     }
 }
 
@@ -36,6 +39,9 @@
         margin-left: rem(58);
         padding: rem(23) 0;
         letter-spacing: 2px;
+        &:not(:last-child):hover {
+            color: $color-primary;
+        }
         &.active {
             color: $color-primary;
         }
@@ -50,7 +56,7 @@
         background-image: url("/stock_tag.svg");
         background-size: cover;
         text-align: center;
-        padding: rem(23) rem(34) rem(23) rem(40);
+        padding: rem(23) rem(34);
         letter-spacing: unset;
     }
 }
