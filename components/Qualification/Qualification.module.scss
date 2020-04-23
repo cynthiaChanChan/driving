@@ -1,0 +1,30 @@
+@import "../../sass/abstracts/abstracts.scss";
+
+.qualification {
+    background-color: $color-grey-2;
+    padding: rem(62) 0 rem(76) 0;
+    .container {
+        max-width: rem(1380);
+        text-align: center;
+    }
+}
+
+.slider {
+    margin-top: rem(60);
+
+    .prevArrow,
+    .nextArrow {
+        width: rem(18);
+        height: auto;
+        transform: translate(0, -2.2rem);
+    }
+}
+
+.prevArrow img {
+    transform: rotate(180deg);
+    width: 100%;
+}
+
+.nextArrow img {
+    width: 100%;
+}

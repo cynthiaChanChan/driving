@@ -1,0 +1,15 @@
+@import "../../sass/abstracts/abstracts.scss";
+
+.cooperation {
+    padding: rem(84) rem(20) rem(100);
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(69);
+    & > div {
+        margin: 0 rem(19);
+    }
+}

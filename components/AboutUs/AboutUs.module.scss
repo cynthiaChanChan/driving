@@ -1,0 +1,20 @@
+@import "../../sass/abstracts/abstracts.scss";
+
+.about {
+    height: rem(558);
+    background-image: url("/background_about.jpg");
+    background-size: cover;
+    background-position: top center;
+    padding: rem(107) 0 rem(120) 0;
+
+    .wrapper {
+        width: rem(743);
+        margin: 0 rem(138) 0 auto;
+        p {
+            font-size: 21px;
+            line-height: 1.52;
+            color: $color-dark-2;
+            margin-top: rem(34);
+        }
+    }
+}

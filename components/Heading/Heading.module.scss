@@ -1,0 +1,31 @@
+@import "../../sass/abstracts/abstracts.scss";
+.wrapper {
+    display: inline-block;
+}
+
+.subBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(13);
+}
+
+.sub_heading {
+    font-size: rem(32);
+    font-weight: 500;
+    color: $color-dark-2;
+}
+
+.line {
+    flex: 1;
+    height: 3px;
+    background-color: $color-dark-2;
+    margin: 0 6px 0 rem(20);
+}
+
+.heading {
+    font-size: rem(48);
+    font-weight: 900;
+    color: $color-primary;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}

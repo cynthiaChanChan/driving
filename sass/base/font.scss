@@ -1,18 +1,9 @@
 @font-face {
     font-family: "SourceHanSansCN";
     font-style: normal;
-    font-weight: 300;
-    src: local("SourceHanSansCN Normal"),
-        url("/fonts/SourceHanSansCN-Normal.otf") format("opentype");
-    font-display: "swap";
-}
-
-@font-face {
-    font-family: "SourceHanSansCN";
-    font-style: normal;
     font-weight: 400;
     src: local("SourceHanSansCN Regular"),
-        url("/fonts/SourceHanSansCN-Regular.otf") format("opentype");
+        url("/fonts/SourceHanSansCN-Regular.woff") format("woff");
     font-display: "swap";
 }
 
@@ -21,7 +12,7 @@
     font-style: normal;
     font-weight: 500;
     src: local("SourceHanSansCN Medium"),
-        url("/fonts/SourceHanSansCN-Medium.otf") format("opentype");
+        url("/fonts/SourceHanSansCN-Medium.woff") format("woff");
     font-display: "swap";
 }
 
@@ -30,7 +21,7 @@
     font-style: normal;
     font-weight: 700;
     src: local("SourceHanSansCN Bold"),
-        url("/fonts/SourceHanSansCN-Bold.otf") format("opentype");
+        url("/fonts/SourceHanSansCN-Bold.woff") format("woff");
     font-display: "swap";
 }
 
@@ -39,6 +30,6 @@
     font-style: normal;
     font-weight: 900;
     src: local("SourceHanSansCN Heavy"),
-        url("/fonts/SourceHanSansCN-Heavy.otf") format("opentype");
+        url("/fonts/SourceHanSansCN-Heavy.woff") format("woff");
     font-display: "swap";
 }

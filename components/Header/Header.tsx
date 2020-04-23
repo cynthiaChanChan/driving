@@ -23,7 +23,13 @@ const Header = () => {
                                 className={route === url ? styles.active : ""}
                             >
                                 {url.includes("http") ? (
-                                    <a href={url}>{content}</a>
+                                    <a
+                                        href={url}
+                                        target="_black"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {content}
+                                    </a>
                                 ) : (
                                     <Link href={url}>
                                         <a>{content}</a>

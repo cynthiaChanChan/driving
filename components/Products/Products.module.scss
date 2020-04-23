@@ -1,0 +1,10 @@
+@import "../../sass/abstracts/abstracts.scss";
+
+.products {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: rem(954);
+        margin: rem(90) auto rem(80) auto;
+    }
+}
