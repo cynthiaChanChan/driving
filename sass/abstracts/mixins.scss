@@ -13,6 +13,28 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin center-by-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// @mixin font
+
+// animation underline
+// li::after { @include underline; }
+// li:hover { &::after { width: 100%; left: 0; } }
+@mixin underline {
+    content: "";
+    height: 2px;
+    display: block;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    background: currentColor;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
 // oveflow...
 @mixin ellipsis {
     text-overflow: ellipsis;

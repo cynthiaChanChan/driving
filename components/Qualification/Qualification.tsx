@@ -41,6 +41,30 @@ const Qualification = () => {
         cssEase: "linear",
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                },
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    speed: 200,
+                },
+            },
+        ],
     };
 
     return (

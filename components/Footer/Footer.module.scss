@@ -8,6 +8,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 51.25em) {
+        padding: rem(43) 0;
+    }
+    @include respond("small") {
+        padding: rem(43) 20px;
+    }
 }
 
 .heading {
@@ -22,17 +28,48 @@
 .wrapper {
     display: flex;
     margin: rem(76) 0 rem(94);
+    @media only screen and (max-width: 51.25em) {
+        margin: rem(50) 0;
+    }
+    @include respond("small") {
+        flex-direction: column;
+        & > :first-child {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .message {
     margin: 0 rem(84);
     font-size: rem(21);
     line-height: 1.5;
+    @include respond("extra-large") {
+        font-size: 16px;
+        margin: 0 rem(44);
+    }
+    @media only screen and (max-width: 51.25em) {
+        margin: 0 20px;
+        font-size: rem(16);
+    }
     a:hover {
         color: $color-primary;
     }
 }
 
+.copyright {
+    font-size: 16px;
+    @include respond("medium") {
+        font-size: rem(16);
+    }
+    @include respond("small") {
+        text-align: center;
+        line-height: 2;
+    }
+}
+
 .copyright span {
     margin-right: rem(46);
+    @include respond("small") {
+        display: block;
+    }
 }

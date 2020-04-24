@@ -6,6 +6,12 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    @include respond("extra-large") {
+        height: rem(720);
+    }
+    @media only screen and (max-width: 51.25em) {
+        height: rem(560);
+    }
 }
 
 .titleBox {
@@ -16,6 +22,12 @@
     padding: 0 20px;
     text-align: center;
     color: $color-white;
+    @media only screen and (max-width: 51.25em) {
+        bottom: rem(100);
+    }
+    @include respond("small") {
+        bottom: rem(40);
+    }
 }
 
 .heading {
@@ -23,8 +35,22 @@
     font-weight: 900;
     letter-spacing: 16px;
     text-shadow: 0 0 32px $color-shadow;
+    @include respond("extra-large") {
+        font-size: rem(58);
+    }
+    @media only screen and (max-width: 51.25em) {
+        font-size: rem(42);
+    }
+    @include respond("extra-small") {
+        font-size: rem(36);
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
     span {
         margin-right: rem(60);
+        @include respond("extra-small") {
+            margin-right: rem(30);
+        }
     }
 }
 
@@ -33,14 +59,25 @@
     width: rem(290);
     background-color: $color-primary;
     margin: 18px auto;
+    @media only screen and (max-width: 51.25em) {
+        height: 4px;
+    }
+    @include respond("small") {
+        width: rem(200);
+    }
 }
 
 .tag {
     font-size: rem(24);
-    max-width: rem(780);
     line-height: 2;
     letter-spacing: 2.4px;
     text-shadow: 0 0 32px $color-shadow;
     margin: 0 auto;
     font-weight: 300;
+    @include respond("extra-large") {
+        font-size: rem(20);
+    }
+    @media only screen and (max-width: 51.25em) {
+        font-size: 16px;
+    }
 }

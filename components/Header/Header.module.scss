@@ -7,7 +7,15 @@
     top: 0;
     left: 0;
     z-index: 1;
-
+    @media only screen and (max-width: 84em) {
+        height: rem(130);
+    }
+    @media only screen and (max-width: 63.2em) {
+        height: rem(110);
+    }
+    @media only screen and (max-width: 51.25em) {
+        height: rem(90);
+    }
     .container {
         display: flex;
         align-items: center;
@@ -21,10 +29,79 @@
     display: block;
     height: 100%;
     margin-left: rem(90);
+    @media only screen and (max-width: 84em) {
+        margin-left: rem(60);
+    }
+    @include respond("extra-large") {
+        margin-left: 0;
+    }
+    @include respond("medium") {
+        margin-left: rem(90);
+    }
+    @include respond("small") {
+        margin-left: 30px;
+    }
     img {
         display: block;
         height: 100%;
         width: auto;
+    }
+}
+
+.nav_button {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 30px;
+    @include respond("medium") {
+        display: block;
+    }
+}
+
+.nav_icon,
+.nav_icon::before,
+.nav_icon::after {
+    width: 100%;
+    height: 3px;
+    background-color: $color-primary;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.nav_icon {
+    @include center-by-absolute;
+}
+
+.nav_icon::before,
+.nav_icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.nav_icon::before {
+    top: -8px;
+}
+
+.nav_icon::after {
+    top: 8px;
+}
+
+.expand {
+    .nav_icon {
+        background-color: transparent;
+    }
+    .nav_icon::before {
+        transform: rotate(135deg);
+        top: 0;
+    }
+    .nav_icon::after {
+        transform: rotate(-135deg);
+        top: 0;
     }
 }
 
@@ -34,21 +111,64 @@
     font-size: rem(21);
     color: $color-white;
     font-weight: 700;
-
+    @include respond("large") {
+        font-size: 16px;
+    }
+    @include respond("medium") {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: $color-white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        font-size: rem(36);
+        color: $color-dark-2;
+        transform: translateX(-100%);
+        transition: transform 1s;
+        backface-visibility: hidden;
+        li {
+            margin: rem(26);
+        }
+    }
+    @include respond("small") {
+        font-size: rem(26);
+    }
     li {
         margin-left: rem(58);
-        padding: rem(23) 0;
+        padding: rem(23) 0 rem(21);
         letter-spacing: 2px;
+        position: relative;
+        @media only screen and (max-width: 84em) {
+            margin-left: rem(40);
+        }
+        @include respond("large") {
+            margin-left: rem(26);
+        }
+        @media only screen and (max-width: 51.25em) {
+            padding: 10px 0;
+        }
+        @include respond("small") {
+            margin: rem(20);
+            padding: 0;
+        }
+        &::after {
+            @include underline;
+        }
+
         &:not(:last-child):hover {
             color: $color-primary;
+            &::after {
+                width: 100%;
+                left: 0;
+            }
         }
         &.active {
             color: $color-primary;
         }
-    }
-
-    li:first-child {
-        letter-spacing: 16px;
     }
 
     li:last-child {
@@ -58,5 +178,23 @@
         text-align: center;
         padding: rem(23) rem(34);
         letter-spacing: unset;
+        @media only screen and (max-width: 63.2em) {
+            padding-right: 10px;
+        }
+        @media only screen and (max-width: 51.25em) {
+            padding: 10px 10px 10px 23px;
+        }
+        @include respond("medium") {
+            padding: 23px 34px 23px 46px;
+            margin-left: 0;
+            color: $color-white;
+        }
+        @include respond("small") {
+            padding: 10px 34px 10px 46px;
+        }
     }
+}
+
+.open {
+    transform: translateX(0);
 }

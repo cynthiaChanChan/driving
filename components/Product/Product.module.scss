@@ -6,14 +6,36 @@
     align-items: center;
     color: $color-content;
     font-size: 19px;
-    width: rem(275);
+    width: rem(290);
     padding: 10px;
+    background-color: $color-white;
+    @include respond("extra-large") {
+        width: rem(310);
+    }
+    @include respond("large") {
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 51.25em) {
+        font-size: rem(16);
+    }
+    @include respond("small") {
+        width: rem(340);
+        border-radius: 4px;
+        padding: 30px 20px;
+        box-shadow: 0 0.75rem 1.25rem 0 rgba(0, 0, 0, 0.12);
+    }
 }
 
 .icon {
     width: rem(200);
     margin-bottom: rem(50);
-
+    @include respond("large") {
+        width: rem(160);
+        margin-bottom: rem(20);
+    }
+    @media only screen and (max-width: 51.25em) {
+        width: rem(120);
+    }
     img {
         width: 100%;
     }
@@ -23,12 +45,21 @@
     font-size: rem(24);
     font-weight: 700;
     letter-spacing: 1.2px;
+    @include respond("large") {
+        font-size: 18px;
+    }
+    @media only screen and (max-width: 51.25em) {
+        font-size: rem(18);
+    }
 }
 
 .content {
     margin: rem(45) 0;
     line-height: 1.68;
     flex: 1;
+    @include respond("large") {
+        margin: rem(20) 0;
+    }
 }
 
 .link {
@@ -38,4 +69,7 @@
     border: 1px solid $color-primary;
     letter-spacing: 3.8px;
     text-align: center;
+    @include respond("large") {
+        padding: rem(16);
+    }
 }

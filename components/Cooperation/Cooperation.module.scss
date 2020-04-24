@@ -9,7 +9,13 @@
     display: flex;
     justify-content: center;
     margin-top: rem(69);
+    @include respond("large") {
+        flex-wrap: wrap;
+    }
     & > div {
         margin: 0 rem(19);
+        @include respond("large") {
+            margin-bottom: 3rem;
+        }
     }
 }

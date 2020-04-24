@@ -1,15 +1,29 @@
 @import "../../sass/abstracts/abstracts.scss";
 
 .imgBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center-by-flex;
     width: rem(312);
     height: rem(312);
     padding: 1rem;
     background-color: $color-white;
     margin: 0 auto;
     box-shadow: 0 2px 6px rgba(34, 34, 34, 0.07);
+    @media only screen and (max-width: 88.75em) {
+        width: rem(280);
+        height: rem(280);
+    }
+    @media only screen and (max-width: 81.25em) {
+        width: rem(312);
+        height: rem(312);
+    }
+    @include respond("large") {
+        width: rem(280);
+        height: rem(280);
+    }
+    @media only screen and (max-width: 40.62em) {
+        width: rem(312);
+        height: rem(312);
+    }
     img {
         display: block;
         height: 100%;

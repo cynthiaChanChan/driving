@@ -3,8 +3,26 @@
 .products {
     .container {
         display: flex;
-        justify-content: space-between;
-        max-width: rem(954);
+        justify-content: center;
         margin: rem(90) auto rem(80) auto;
+        @include respond("small") {
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            padding: rem(50) 20px;
+            background-color: $color-grey-2;
+        }
+        & > * {
+            margin: 0 rem(35);
+            @include respond("large") {
+                margin: 0 rem(10);
+            }
+            @media only screen and (max-width: 51.25em) {
+                margin: 0;
+            }
+            @include respond("small") {
+                margin-bottom: 20px;
+            }
+        }
     }
 }

@@ -13,6 +13,9 @@
     font-size: rem(32);
     font-weight: 500;
     color: $color-dark-2;
+    @media only screen and (max-width: 51.25em) {
+        font-size: rem(26);
+    }
 }
 
 .line {
@@ -20,6 +23,9 @@
     height: 3px;
     background-color: $color-dark-2;
     margin: 0 6px 0 rem(20);
+    @media only screen and (max-width: 51.25em) {
+        height: 2px;
+    }
 }
 
 .heading {
@@ -28,4 +34,7 @@
     color: $color-primary;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+    @media only screen and (max-width: 51.25em) {
+        font-size: rem(36);
+    }
 }

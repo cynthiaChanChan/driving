@@ -5,10 +5,6 @@ type NavItem = {
 
 const navList: NavItem[] = [
     {
-        content: "首页",
-        url: "/",
-    },
-    {
         content: "驾悦传媒",
         url: "http://ad.i-driving.cn/",
     },
@@ -26,7 +22,7 @@ const navList: NavItem[] = [
     },
     {
         content: "联系我们",
-        url: "/#about-us",
+        url: "/#contact",
     },
 ];
 

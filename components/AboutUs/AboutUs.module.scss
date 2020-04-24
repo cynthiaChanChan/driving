@@ -1,20 +1,35 @@
 @import "../../sass/abstracts/abstracts.scss";
 
 .about {
-    height: rem(558);
     background-image: url("/background_about.jpg");
     background-size: cover;
     background-position: top center;
     padding: rem(107) 0 rem(120) 0;
-
+    @include respond("small") {
+        text-align: center;
+        padding: rem(60) 0;
+    }
     .wrapper {
         width: rem(743);
         margin: 0 rem(138) 0 auto;
+        @include respond("large") {
+            margin: 0 auto;
+        }
+        @include respond("small") {
+            width: 100%;
+        }
         p {
-            font-size: 21px;
+            font-size: rem(21);
             line-height: 1.52;
             color: $color-dark-2;
             margin-top: rem(34);
+            @include respond("large") {
+                font-size: 16px;
+            }
+            @include respond("small") {
+                text-align: left;
+                font-size: rem(16);
+            }
         }
     }
 }
