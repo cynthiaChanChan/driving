@@ -4,7 +4,7 @@ import Heading from "../Heading/Heading";
 const AboutUs = () => {
     const heading = { title: "About us", subTitle: "关于驾悦" };
     return (
-        <section className={styles.about}>
+        <section className={styles.about} id="i-driving">
             <div className="container">
                 <div className={styles.wrapper}>
                     <Heading heading={heading} />

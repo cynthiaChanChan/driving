@@ -8,11 +8,13 @@ type CardProps = {
 const Card = ({ card: { imgUrl, title, isWide } }: CardProps) => (
     <div className={styles.card}>
         <div className={styles.imgBox}>
-            <img
+            <a
                 className={isWide ? styles.wide : ""}
-                src={imgUrl}
-                alt="qualification"
-            />
+                href={imgUrl}
+                target="_black"
+            >
+                <img src={imgUrl} alt="qualification" />
+            </a>
         </div>
         <h4 className={styles.heading}>{title}</h4>
     </div>

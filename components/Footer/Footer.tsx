@@ -36,7 +36,7 @@ const Footer = () => {
             <div className={styles.copyright}>
                 <span>粤ICP备14098329号-1</span>Copyright &copy; {year}-
                 {year + 3}
-                &nbsp;.i-driving 驾悦集团 版权所有
+                &nbsp;i-driving 驾悦集团 版权所有
             </div>
         </footer>
     );

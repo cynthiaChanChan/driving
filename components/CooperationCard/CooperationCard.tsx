@@ -16,7 +16,7 @@ const CooperationCard = ({ card }: CooperationCardProps) => {
                     网站：{webside}
                 </a>
                 <a href={`tel:${phone}`}>手机&amp;微信：{phone}</a>
-                <a href={`mailto${mail}`}>邮箱：{mail}</a>
+                <a href={`mailto:${mail}`}>邮箱：{mail}</a>
             </div>
 
             <div className={styles.rectangle} />

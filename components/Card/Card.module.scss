@@ -24,11 +24,13 @@
         width: rem(312);
         height: rem(312);
     }
+    a,
     img {
         display: block;
         height: 100%;
     }
-    .wide {
+    .wide,
+    .wide img {
         height: auto;
         width: 100%;
     }
