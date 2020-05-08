@@ -37,7 +37,7 @@ const Header = () => {
     );
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} id="top">
             <div className={`${styles.container} container`}>
                 <Link href="/">
                     <a

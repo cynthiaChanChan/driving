@@ -1,14 +1,27 @@
 import styles from "./Footer.module.scss";
 import Heading from "../Heading/Heading";
+import GoTopButton from "../GoTopButton/GoTopButton";
+
+import VisibilitySensor from "react-visibility-sensor";
+import { useState, useCallback } from "react";
+
 
 const Footer = () => {
     const year = new Date().getFullYear();
     const heading = { title: "Contact us", subTitle: "联系我们" };
+    const [isElemVisible, setIsElemVisible] = useState(false);
 
+    const handleVisibilityChange = useCallback(
+        (isVisible: boolean): void => {
+            setIsElemVisible(isVisible);
+        },
+        [isElemVisible]
+    );
     return (
         <footer className={styles.footer}>
-            <Heading heading={heading} className={styles.heading} />
-
+            <VisibilitySensor onChange={handleVisibilityChange}>
+                <Heading heading={heading} className={styles.heading} />
+            </VisibilitySensor>
             <div className={styles.wrapper}>
                 <div className={styles.message}>
                     <p>深圳总部</p>
@@ -38,6 +51,8 @@ const Footer = () => {
                 {year + 3}
                 &nbsp;i-driving 驾悦集团 版权所有
             </div>
+
+            <GoTopButton isvisible={isElemVisible} />
         </footer>
     );
 };

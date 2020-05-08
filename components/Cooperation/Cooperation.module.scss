@@ -3,6 +3,10 @@
 .cooperation {
     padding: rem(84) rem(20) rem(100);
     text-align: center;
+
+    @include respond("large") {
+        padding-bottom: rem(60);
+    }
 }
 
 .list {

@@ -6,7 +6,7 @@ type NavItem = {
 const navList: NavItem[] = [
     {
         content: "驾悦传媒",
-        url: "http://ad.i-driving.cn/",
+        url: "http://jy.i-driving.cn",
     },
     {
         content: "识伯乐",
@@ -14,7 +14,7 @@ const navList: NavItem[] = [
     },
     {
         content: "3号学车",
-        url: "https://www.3hxc.cn/",
+        url: "http://xc.3hxc.cn",
     },
     {
         content: "关于驾悦",

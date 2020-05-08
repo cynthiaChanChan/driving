@@ -118,7 +118,7 @@
     align-items: center;
     font-size: rem(21);
     color: $color-white;
-    font-weight: 700;
+    font-weight: 400;
     @include respond("large") {
         font-size: 16px;
     }
@@ -147,7 +147,7 @@
     }
     li {
         margin-left: rem(58);
-        padding: rem(23) 0 rem(21);
+        padding: rem(21) 0 rem(23);
         letter-spacing: 2px;
         position: relative;
         @media only screen and (max-width: 84em) {
@@ -164,15 +164,15 @@
             padding: 0;
         }
         &::after {
-            @include underline;
+            // @include underline;
         }
 
         &:not(:last-child):hover {
             color: $color-primary;
-            &::after {
-                width: 100%;
-                left: 0;
-            }
+            // &::after {
+            //     width: 100%;
+            //     left: 0;
+            // }
         }
         &.active {
             color: $color-primary;

@@ -12,7 +12,7 @@ const cooperation: Cooperation = [
     {
         title: "「车企咨询合作」",
         subTitle: "驾悦传媒 事业部",
-        webside: "http://ad.i-driving.cn",
+        webside: "http://jy.i-driving.cn",
         phone: "139 1085 3209",
         mail: "richard.shi@i-driving.cn",
     },

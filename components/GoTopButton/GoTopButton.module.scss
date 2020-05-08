@@ -1,0 +1,27 @@
+@import "../../sass/abstracts/abstracts.scss";
+
+.button {
+    width: rem(40);
+    height: rem(40);
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    background: $color-white url(/arrow_up.svg) center / 50% auto no-repeat;
+    position: fixed;
+    left: rem(-50);
+    bottom: 0;
+    transition: bottom 0.7s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &.visible {
+        left: unset;
+        right: 20px;
+        bottom: 50px;
+
+        @include respond(small) {
+            right: 10px;
+        }
+    }
+}

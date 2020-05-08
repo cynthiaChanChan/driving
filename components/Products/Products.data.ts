@@ -15,7 +15,7 @@ const products: Products = [
         content:
             "致力于为客户提供高品质广告发布、驾校深度活动等渠道增值服务，将品牌声音有效持续传递给潜在购车人群的驾校市场",
         buttonName: "更多详情",
-        url: "http://ad.i-driving.cn/",
+        url: "http://jy.i-driving.cn",
     },
     {
         icon: "/sbl_icon.png",
@@ -31,7 +31,7 @@ const products: Products = [
         content:
             "考驾照就找3号学车。通过智能教学引领学车潮流，学员快速拿证实现5年零差评",
         buttonName: "更多详情",
-        url: "https://www.3hxc.cn/",
+        url: "http://xc.3hxc.cn",
     },
 ];
 

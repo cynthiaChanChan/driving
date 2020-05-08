@@ -12,6 +12,10 @@
     @media only screen and (max-width: 51.25em) {
         height: rem(560);
     }
+
+    @include respond("small") {
+        height: rem(450);
+    }
 }
 
 .titleBox {
