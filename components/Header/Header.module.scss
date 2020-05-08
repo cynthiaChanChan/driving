@@ -9,7 +9,8 @@
     z-index: 1;
     @include respond("medium") {
         background-color: $color-white;
-        position: sticky;
+        position: fixed;
+        width: 100%;
         top: 0;
         z-index: 10;
         box-shadow: 0 2px 3px 0 rgba(#000, 0.1);

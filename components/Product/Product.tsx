@@ -18,7 +18,7 @@ const Product = ({ product }: ProductProps) => {
             <a
                 className={styles.link}
                 href={url}
-                target="_black"
+                target="_blank"
                 rel="noopener noreferrer"
             >
                 {buttonName}

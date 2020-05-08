@@ -1,0 +1,6 @@
+@import "../../sass/abstracts/abstracts.scss";
+.main {
+    @include respond("medium") {
+        margin-top: 72px;
+    }
+}

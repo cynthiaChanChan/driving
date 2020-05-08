@@ -11,7 +11,7 @@ const Card = ({ card: { imgUrl, title, isWide } }: CardProps) => (
             <a
                 className={isWide ? styles.wide : ""}
                 href={imgUrl}
-                target="_black"
+                target="_blank"
             >
                 <img src={imgUrl} alt="qualification" />
             </a>

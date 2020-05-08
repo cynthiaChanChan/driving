@@ -1,10 +1,29 @@
-import styles from "./AboutUs.module.scss";
+import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
 import Heading from "../Heading/Heading";
+
+import styles from "./AboutUs.module.scss";
 
 const AboutUs = () => {
     const heading = { title: "About us", subTitle: "关于驾悦" };
+    const aboutEle = useRef<null | HTMLElement>(null);
+    const router = useRouter();
+    useEffect(() => {
+        if (
+            router.query.section === "driving" &&
+            aboutEle &&
+            aboutEle.current
+        ) {
+            const offsetTop = aboutEle.current.offsetTop;
+            window.scrollTo({
+                top: offsetTop - 72,
+                left: 0,
+                behavior: "smooth",
+            });
+        }
+    }, [router.query.section, router.query.status]);
     return (
-        <section className={styles.about} id="i-driving">
+        <section className={styles.about} id="driving" ref={aboutEle}>
             <div className="container">
                 <div className={styles.wrapper}>
                     <Heading heading={heading} />

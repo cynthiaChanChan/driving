@@ -18,11 +18,11 @@ const navList: NavItem[] = [
     },
     {
         content: "关于驾悦",
-        url: "/#i-driving",
+        url: "/?section=driving",
     },
     {
         content: "联系我们",
-        url: "/#contact",
+        url: "/?section=contact",
     },
 ];
 

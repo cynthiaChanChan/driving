@@ -15,7 +15,7 @@ const Footer = () => {
                     <p>深圳五八驾悦信息网络科技有限公司</p>
                     <a
                         href="https://ditu.amap.com/place/B0FFFDBK1H"
-                        target="_black"
+                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         地址：深圳市福田区园岭街道39号10栋
@@ -26,7 +26,7 @@ const Footer = () => {
                     <p>广州驾悦信息科技有限公司</p>
                     <a
                         href="https://ditu.amap.com/place/B00140TY9J"
-                        target="_black"
+                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         地址：广州市天河区天河路490号壬丰大厦9层
