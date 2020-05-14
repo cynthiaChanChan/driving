@@ -8,9 +8,8 @@ type QualificationList = QualificationItem[];
 
 const qualificationList: QualificationList = [
     {
-        imgUrl: "patent_cert.jpg",
-        title: "发明专利",
-        isWide: true,
+        imgUrl: "icp_cert.jpg",
+        title: "ICP证书",
     },
     {
         imgUrl: "stock_cert.jpg",
@@ -18,8 +17,9 @@ const qualificationList: QualificationList = [
         isWide: true,
     },
     {
-        imgUrl: "icp_cert.jpg",
-        title: "ICP证书",
+        imgUrl: "patent_cert.jpg",
+        title: "发明专利",
+        isWide: true,
     },
     {
         imgUrl: "software_cert1.jpg",

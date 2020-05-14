@@ -3,7 +3,9 @@
 .cooperation {
     padding: rem(84) rem(20) rem(100);
     text-align: center;
-
+    position: relative;
+    //Offsetting anchor hash tag links to adjust for fixed header
+    margin-top: -72px;
     @include respond("large") {
         padding-bottom: rem(60);
     }

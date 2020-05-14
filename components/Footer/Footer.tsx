@@ -5,7 +5,6 @@ import GoTopButton from "../GoTopButton/GoTopButton";
 import VisibilitySensor from "react-visibility-sensor";
 import { useState, useCallback } from "react";
 
-
 const Footer = () => {
     const year = new Date().getFullYear();
     const heading = { title: "Contact us", subTitle: "联系我们" };

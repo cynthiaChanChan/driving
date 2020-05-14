@@ -6,6 +6,9 @@
     background-size: cover;
     background-position: top;
     position: relative;
+    @media only screen and (max-width: 90em) {
+        height: rem(800);
+    }
     @include respond("extra-large") {
         height: rem(720);
     }
@@ -32,6 +35,16 @@
     @include respond("small") {
         bottom: rem(40);
     }
+
+    &.animation {
+        .heading {
+            animation: moveInUp 1s ease-out;
+        }
+
+        .tag {
+            animation: moveInDown 1s ease-out;
+        }
+    }
 }
 
 .heading {
@@ -39,6 +52,7 @@
     font-weight: 900;
     letter-spacing: 16px;
     text-shadow: 0 0 32px $color-shadow;
+
     @include respond("extra-large") {
         font-size: rem(58);
     }
@@ -78,6 +92,7 @@
     text-shadow: 0 0 32px $color-shadow;
     margin: 0 auto;
     font-weight: 300;
+
     @include respond("extra-large") {
         font-size: rem(20);
     }

@@ -27,13 +27,8 @@ const Header = () => {
                 body.className = "";
             }
             setIsClicked(false);
-            if (href.includes("section")) {
-                const status = router.query.status === "true";
-                e.preventDefault();
-                router.push(`${href}&status=${!status}`);
-            }
         },
-        [isClicked]
+        [isClicked, router.query.status]
     );
 
     return (

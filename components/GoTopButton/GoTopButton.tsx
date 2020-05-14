@@ -9,19 +9,7 @@ type GoTopButtonProps = {
 
 const GoTopButton = ({ isvisible }: GoTopButtonProps) => {
     const router = useRouter();
-    const [isFromLink, setIsFromLink] = useState(false);
 
-    useEffect(() => {
-        if (router.query.section === "contact") {
-            setIsFromLink(true);
-        } else {
-            setIsFromLink(false);
-        }
-    }, [router.query.status]);
-
-    if (isFromLink) {
-        return null;
-    }
     return (
         <Link href={router.route}>
             <a

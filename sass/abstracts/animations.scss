@@ -1,0 +1,93 @@
+//animation: moveInLeft 1s ease-out;
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-10rem, 0, 0);
+    }
+
+    80% {
+        transform: translate3d(1rem, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+//animation: moveInRight 1s ease-out;
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(10rem, 0, 0);
+    }
+
+    80% {
+        transform: translate3d(-1rem, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -10rem, 0);
+    }
+
+    80% {
+        transform: translate3d(0, 1rem, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes moveInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 10rem, 0);
+    }
+
+    80% {
+        transform: translate3d(0, -1rem, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: ttranslate3d(0, 0, 0);
+    }
+}
+
+// 做效果如果不是一开始做, 该item opacity: 0;
+// animation: popup 0.8s ease-in forwards;
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0.25);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}

@@ -6,8 +6,11 @@ import Products from "../components/Products/Products";
 import AboutUs from "../components/AboutUs/AboutUs";
 import Qualification from "../components/Qualification/Qualification";
 import Cooperation from "../components/Cooperation/Cooperation";
+import { useContext } from "react";
+import { AppContext } from "../providers/app.provider";
 
 export default function Home() {
+    const { title } = useContext(AppContext);
     return (
         <>
             <Head>
@@ -19,7 +22,7 @@ export default function Home() {
                     name="keyword"
                     content="驾悦，驾悦集团，驾校，驾培，驾校媒体，驾校服务，驾校管理，驾校系统，驾校广告，汽车广告投放，高精度智能学车，科目二科目三模拟考试系统，驾校硬件及软件管理，考驾照，互联网模式驾培，驾悦传媒，识伯乐，3号学车"
                 />
-                <title>驾悦集团</title>
+                <title>{title}</title>
             </Head>
             <Layout>
                 <Banner />

@@ -19,7 +19,7 @@ const products: Products = [
     },
     {
         icon: "/sbl_icon.png",
-        title: "行业领先驾校服务商",
+        title: "行业领先的驾校服务商",
         content:
             "集营销策划，高科技设备，高精度智能模拟教学系统、数据分析管理系统，为驾校的运营管理提供一体化解决方案",
         buttonName: "更多详情",
@@ -31,7 +31,7 @@ const products: Products = [
         content:
             "考驾照就找3号学车。通过智能教学引领学车潮流，学员快速拿证实现5年零差评",
         buttonName: "更多详情",
-        url: "http://xc.3hxc.cn",
+        url: "https://www.3hxc.cn",
     },
 ];
 

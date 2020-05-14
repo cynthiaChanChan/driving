@@ -1,5 +1,6 @@
 type NavItem = {
     content: string;
+    title?: string;
     url: string;
 };
 
@@ -14,15 +15,17 @@ const navList: NavItem[] = [
     },
     {
         content: "3号学车",
-        url: "http://xc.3hxc.cn",
+        url: "https://www.3hxc.cn",
     },
     {
         content: "关于驾悦",
-        url: "/?section=driving",
+        title: "驾悦集团-关于驾悦-深圳五八驾悦信息网络科技有限公司",
+        url: "/?section=driving#driving",
     },
     {
         content: "联系我们",
-        url: "/?section=contact",
+        title: "驾悦集团-联系我们-广州驾悦信息科技有限公司",
+        url: "/?section=contact#contact",
     },
 ];
 

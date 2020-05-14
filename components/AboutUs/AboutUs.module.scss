@@ -1,10 +1,13 @@
 @import "../../sass/abstracts/abstracts.scss";
 
-.about {
+.aboutContainer {
     background-image: url("/background_about.jpg");
     background-size: cover;
     background-position: top center;
     padding: rem(107) 0 rem(120) 0;
+    //Offsetting anchor hash tag links to adjust for fixed header
+    position: relative;
+    margin-top: -72px;
     @include respond("small") {
         text-align: center;
         padding: rem(60) 0;
@@ -30,6 +33,9 @@
                 text-align: left;
                 font-size: rem(16);
             }
+        }
+        &.animation p {
+            animation: moveInDown 1s ease-out;
         }
     }
 }

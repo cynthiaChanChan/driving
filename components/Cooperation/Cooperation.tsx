@@ -11,22 +11,13 @@ const Cooperation = () => {
     const heading = { title: "Cooperation", subTitle: "咨询合作" };
     const contactEle = useRef<null | HTMLElement>(null);
     const router = useRouter();
-    useEffect(() => {
-        if (
-            router.query.section === "contact" &&
-            contactEle &&
-            contactEle.current
-        ) {
-            const offsetTop = contactEle.current.offsetTop;
-            window.scrollTo({
-                top: offsetTop - 72,
-                left: 0,
-                behavior: "smooth",
-            });
-        }
-    }, [router.query.section, router.query.status]);
+
     return (
-        <section className={styles.cooperation} id="contact" ref={contactEle}>
+        <section
+            className={`${styles.cooperation} offset`}
+            id="contact"
+            ref={contactEle}
+        >
             <Heading heading={heading} />
             <div className={styles.list}>
                 {cooperation.map(

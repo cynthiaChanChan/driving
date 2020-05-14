@@ -23,6 +23,10 @@
         border-radius: 4px;
         padding: 30px 20px;
     }
+
+    &.animation .link {
+        animation: pulse 0.8s both;
+    }
 }
 
 .icon {

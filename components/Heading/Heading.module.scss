@@ -1,6 +1,9 @@
 @import "../../sass/abstracts/abstracts.scss";
 .wrapper {
     display: inline-block;
+    &.animation {
+        animation: moveInLeft 1s ease-out forwards;
+    }
 }
 
 .subBox {

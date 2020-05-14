@@ -15,7 +15,6 @@ html {
     @media only screen and (max-width: 50em) {
         font-size: 80%;
     }
-    scroll-behavior: smooth;
 }
 
 body {
@@ -101,4 +100,12 @@ textarea:focus {
 .slick-prev.slick-disabled img,
 .slick-next.slick-disabled img {
     display: none;
+}
+
+//Offsetting anchor hash tag links to adjust for fixed header
+.offset::before {
+    display: block;
+    content: " ";
+    height: 72px;
+    visibility: hidden;
 }
